@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./src/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./src/styles/styles.css"/>
+  <title>WebDeveloping</title>
+</head>
+<body>
+    <header class="header">
+      <div class="header__wrap"> 
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#!" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Portfolio</a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Contacs</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="intro">
+          <div class="intro__wrap">
+            <div class="intro__title">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Elena Kharsova</h1>
+                <h2 class="speciality">Web Developer</h2>                
+            </div>
+            <p class="intro__subtitle">Curious, creative, and always learning — I’m a frontend developer<br>
+                who enjoys building web products that make people’s lives easier.</p>
+          </div>
+          <div class="img-wrapper">
+            <img class="intro__pic" src="./src/img/profile_foto2.jpeg" alt="developer's foto">
+          </div>
+        </section>
+
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__wrap"> 
+        <section id="portfolio" class="portfolio">
+          <div class="portfolio__wrap">
+            <h2 class="portfolio_header">Portfolio</h2>
+            <ul class="carousel"></ul>
+          </div>
+        </section>
+        <section class="overview">
+          <div class="overview__background"></div>
+          <div class="overview__wrap">            
+            <section id="about" class="about__wrap">
+              <h2 class="about__header">About Me</h2>
+            </section>
+            <section class="skills__wrap">
+              <h2 class="skills__header">Skills</h2>
+              <div class="skills-list">
+                <img class="skills-img" src="./src/img/html-icon.png" alt="react icon"/>
+                <img class="skills-img" src="./src/img/js-icon.png" alt="react icon"/>
+                <img class="skills-img" src="./src/img/css-icon.png" alt="react icon"/>
+                <img class="skills-img" src="./src/img/ts-icon.png" alt="react icon"/>
+                <img class="skills-img" src="./src/img/react-icon.png" alt="react icon"/>
+              </div>
+            </section>
+          </div>
+        </section>
+        
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrap"> 
+        <section id="contacts" class="contacts">
+          <form class="form-contacts">
+            <h2 class="contacts__header">Contacts</h2>
+            <fieldset class="form-contacts-fieldset">
+              <p>Feel free to reach out if you'd like to collaborate on a project or just want to say Hi</p>
+              <input type="text" name="name" placeholder="Name"/>
+              <input type="text" name="email" placeholder="Email"/>
+              <input type="text" name="message" placeholder="Message"/> 
+              <button type="submit">Send message</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </footer>
+  </wrap>
+</body>
+</html>
