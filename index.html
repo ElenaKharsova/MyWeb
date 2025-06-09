@@ -31,7 +31,9 @@
             <div class="intro__title">
                 <p class="greeting">Hi, I'm</p>
                 <h1 class="name">Elena Kharsova</h1>
-                <h2 class="speciality">Web Developer</h2>                
+                <div class="speciality__wrap">
+                  <h2 class="speciality">Web Developer</h2>    
+                </div>            
             </div>
             <p class="intro__subtitle">Curious, creative, and always learning — I’m a frontend developer<br>
                 who enjoys building web products that make people’s lives easier.</p>
@@ -60,11 +62,11 @@
             <section class="skills__wrap">
               <h2 class="skills__header">Skills</h2>
               <div class="skills-list">
-                <img class="skills-img" src="./src/img/html-icon.png" alt="react icon"/>
-                <img class="skills-img" src="./src/img/js-icon.png" alt="react icon"/>
-                <img class="skills-img" src="./src/img/css-icon.png" alt="react icon"/>
-                <img class="skills-img" src="./src/img/ts-icon.png" alt="react icon"/>
-                <img class="skills-img" src="./src/img/react-icon.png" alt="react icon"/>
+                <img class="skills-img" src="./src/img/html-icon.png" alt="skills icon"/>               
+                <img class="skills-img" src="./src/img/js-icon.png" alt="skills icon"/>                
+                <img class="skills-img" src="./src/img/css-icon.png" alt="skills icon"/>
+                <img class="skills-img" src="./src/img/ts-icon.png" alt="skills icon"/>
+                <img class="skills-img" src="./src/img/react-icon.png" alt="skills icon"/>
               </div>
             </section>
           </div>
@@ -77,13 +79,43 @@
         <section id="contacts" class="contacts">
           <form class="form-contacts">
             <h2 class="contacts__header">Contacts</h2>
-            <fieldset class="form-contacts-fieldset">
-              <p>Feel free to reach out if you'd like to collaborate on a project or just want to say Hi</p>
-              <input type="text" name="name" placeholder="Name"/>
-              <input type="text" name="email" placeholder="Email"/>
-              <input type="text" name="message" placeholder="Message"/> 
-              <button type="submit">Send message</button>
-            </fieldset>
+            <div class="contacts__wrap">
+              <fieldset class="form-contacts__email">
+                <div class="contacts-name__wrap">
+                  <label for="name" class="contacts__label">Name</label>
+                  <div class="input__wrap">
+                    <input type="text" name="name" class="form-contacts__field" maxlength="20"/>
+                  </div>
+                </div>
+                <div class="contacts-email__wrap">
+                  <label for="email" class="contacts__label">Email</label>
+                  <div class="input__wrap">
+                    <input type="email" name="email" class="form-contacts__field"/>
+                  </div>      
+                </div>
+                <div>
+                  <label for="message" class="contacts__label">Message</label>
+                  <div class="input__wrap">
+                    <textarea type="text" 
+                      name="message" 
+                      class="form-contacts__field" 
+                      cols="100" 
+                      rows="7" 
+                      maxlength="300" 
+                      placeholder="Feel free to reach out if you'd like to collaborate on a project or just want to say Hi :)"
+                      required></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="contacts__button">Send message</button>
+              </fieldset>
+              <div class="contacts-media">
+                <a href="mailto:elena.kharsova@gmail.com" class="media-link">elena.kharsova@gmail.com</a>
+                <div class="social-media">
+                  <a href="https://github.com/ElenaKharsova"><img src="./src/img/github_icon.png" class="media-icon"/></a>
+                  <a href="https://www.linkedin.com/in/elenakharsova"><img src="./src/img/linkedin_icon.png" class="media-icon"/></a>
+                </div>
+              </div>
+            </div>
           </form>
         </section>
       </div>
