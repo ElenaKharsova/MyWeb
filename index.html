@@ -49,8 +49,69 @@
       <div class="main__wrap"> 
         <section id="portfolio" class="portfolio">
           <div class="portfolio__wrap">
-            <h2 class="portfolio_header">Portfolio</h2>
-            <ul class="carousel"></ul>
+            <h2 class="portfolio__header">Portfolio</h2>
+            <ul class="carousel">
+              <li class="card-item card_left">
+                <div class="card__wrap">
+                  <div class="card">
+                    <div class="card__header">Forecast</div>                  
+                    <div class="card__description">A responsive weather app using Yandex.Maps API 3.0 and OpenWeatherMap for real-time forecasts. Features event delegation, async-await, promises, and fetch for smooth API interactions. Saves data to LocalStorage for quick access. Includes unit tests for reliability.
+                    </div>         
+                    <div class="card__buttons">         
+                      <a href="https://github.com/ElenaKharsova/Weather" class="card__link">
+                        <button class="card__button">GitHub</button>
+                      </a>
+                      <a href="https://elenakharsova.github.io/Weather/" class="card__link">
+                        <button class="card__button">Web Site</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__img__wrap">
+                    <img src="src/img/card_weather.png" alt="forecast" class="card__img">
+                  </div> 
+                </div>                   
+              </li>
+              <li class="card-item card_center">
+                <div class="card__wrap">
+                  <div class="card">
+                    <div class="card__header">React calculator</div>                  
+                    <div class="card__description">A classic calculator built with React, featuring a sleek, modern design and essential functions. Supports keyboard input. Fully tested with RTL (React Testing Library). Storybooks are built-in!
+                    </div>         
+                    <div class="card__buttons">         
+                      <a href="https://github.com/ElenaKharsova/Calculator-React" class="card__link">
+                        <button class="card__button">GitHub</button>
+                      </a>
+                      <a href="https://elenakharsova.github.io/Calculator-React/" class="card__link">
+                        <button class="card__button">Web Site</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__img__wrap">
+                    <img src="src/img/card_calculator.png" alt="calculator" class="card__img">
+                  </div>     
+                </div>           
+              </li>              
+              <li class="card-item card_right">                
+                <div class="card__wrap">
+                  <div class="card">
+                    <div class="card__header">Cargo delivery</div>                  
+                    <div class="card__description">Manage shipments with ease: add new shipments, select locations and statuses from lists, and view all data in a color-coded Bootstrap table. Update statuses, filter shipments, and enjoy built-in validation for accurate data.
+                    </div>         
+                    <div class="card__buttons">         
+                      <a href="https://github.com/ElenaKharsova/cargoDelivery" class="card__link">
+                        <button class="card__button">GitHub</button>
+                      </a>
+                      <a href="https://elenakharsova.github.io/cargoDelivery/" class="card__link">
+                        <button class="card__button">Web Site</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__img__wrap">
+                    <img src="src/img/card_cargos.png" alt="Cargo delivery" class="card__img">
+                  </div> 
+                </div>
+              </li>              
+            </ul>
           </div>
         </section>
         <section class="overview">
@@ -84,13 +145,13 @@
                 <div class="contacts-name__wrap">
                   <label for="name" class="contacts__label">Name</label>
                   <div class="input__wrap">
-                    <input type="text" name="name" class="form-contacts__field" maxlength="20"/>
+                    <input type="text" name="name" class="form-contacts__field" maxlength="20" spellcheck="false"/>
                   </div>
                 </div>
                 <div class="contacts-email__wrap">
                   <label for="email" class="contacts__label">Email</label>
                   <div class="input__wrap">
-                    <input type="email" name="email" class="form-contacts__field"/>
+                    <input type="email" name="email" class="form-contacts__field" spellcheck="false" maxlength="40"/>
                   </div>      
                 </div>
                 <div>
@@ -121,5 +182,6 @@
       </div>
     </footer>
   </wrap>
+  <script src="./src/slider.js" type="module"></script>
 </body>
 </html>
