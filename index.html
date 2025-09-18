@@ -119,6 +119,7 @@
           <div class="overview__wrap">            
             <section id="about" class="about__wrap">
               <h2 class="about__header">About Me</h2>
+              <div class="about__description">Programming has always been my dream, which is why I studied Applied Mathematics and built my career in IT. My journey started in software testing, which taught me the importance of product quality and reliability. Today, I’m focused on frontend development: building projects with React and constantly expanding my skills.</div>
             </section>
             <section class="skills__wrap">
               <h2 class="skills__header">Skills</h2>
@@ -138,26 +139,27 @@
     <footer class="footer">
       <div class="footer__wrap"> 
         <section id="contacts" class="contacts">
-          <form class="form-contacts">
+          <form class="form-contacts" id="contactForm">
             <h2 class="contacts__header">Contacts</h2>
             <div class="contacts__wrap">
               <fieldset class="form-contacts__email">
                 <div class="contacts-name__wrap">
                   <label for="name" class="contacts__label">Name</label>
                   <div class="input__wrap">
-                    <input type="text" name="name" class="form-contacts__field" maxlength="20" spellcheck="false"/>
+                    <input type="text" id="name" name="name" class="form-contacts__field" maxlength="20" spellcheck="false"/>
                   </div>
                 </div>
                 <div class="contacts-email__wrap">
                   <label for="email" class="contacts__label">Email</label>
                   <div class="input__wrap">
-                    <input type="email" name="email" class="form-contacts__field" spellcheck="false" maxlength="40"/>
+                    <input type="email" id="email" name="email" class="form-contacts__field" spellcheck="false" maxlength="40"/>
                   </div>      
                 </div>
                 <div>
                   <label for="message" class="contacts__label">Message</label>
                   <div class="input__wrap">
                     <textarea type="text" 
+                      id="message"
                       name="message" 
                       class="form-contacts__field" 
                       cols="100" 
@@ -167,6 +169,7 @@
                       required></textarea>
                   </div>
                 </div>
+                <p class="form-contacts__status"></p>
                 <button type="submit" class="contacts__button">Send message</button>
               </fieldset>
               <div class="contacts-media">
@@ -182,6 +185,8 @@
       </div>
     </footer>
   </wrap>
+  <script src="./src/worker.js" type="module"></script>
   <script src="./src/slider.js" type="module"></script>
+
 </body>
 </html>
