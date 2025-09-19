@@ -171,7 +171,7 @@
                 </div>
                 <p class="form-contacts__status"></p>
                 <button type="submit" class="contacts__button">Send message</button>
-              </fieldset>
+              </fieldset>              
               <div class="contacts-media">
                 <a href="mailto:elena.kharsova@gmail.com" class="media-link">elena.kharsova@gmail.com</a>
                 <div class="social-media">
@@ -180,12 +180,23 @@
                 </div>
               </div>
             </div>
-          </form>
+          </form>   
+          <!-- Modal -->
+          <dialog id="statusDialog" class="dialog">
+            <div class="dialog-body">
+              <div class="icon" id="statusIcon" aria-hidden="true"></div>
+              <h3 id="statusTitle" class="modal__header">Done</h3>
+              <p id="statusText" class="modal__status">Your message has been sent.</p>
+              <div class="actions">
+                <button class="modal__btn" id="okBtn" autofocus>OK</button>
+              </div>
+            </div>
+          </dialog>    
         </section>
       </div>
     </footer>
   </wrap>
-  <script src="./src/worker.js" type="module"></script>
+  <script src="./src/email.js" type="module"></script>
   <script src="./src/slider.js" type="module"></script>
 
 </body>
