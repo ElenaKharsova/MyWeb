@@ -750,4 +750,8 @@ dialog[open] {
     padding-bottom: 10px;
   }
 
+  .media-link {
+    text-align: center;
+  }
+
 }
