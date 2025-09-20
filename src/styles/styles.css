@@ -162,7 +162,7 @@ button:hover {
   margin-right: 10%;
 }
 
-.img-wrapper{
+.img-wrapper {
   position: relative;
   width: 300px;
   height: 300px;
@@ -387,6 +387,8 @@ button:hover {
 }
 
 .about__wrap {
+  padding-top: 20px;
+  padding-bottom: 40px;
   width: 70%;
   font-size: 32px;
   color: var(--text-primary-color);
@@ -656,4 +658,96 @@ dialog[open] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
+}
+
+@media (max-width: 420px) {
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  fieldset,
+  .form-contacts__email {
+    min-inline-size: 0;      
+    width: 100%;
+    border: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .intro__wrap {
+    padding: 15px 5px;
+    font-size: 20px;
+    width: 100%;
+  } 
+
+  .intro {
+    flex-direction: row-reverse;
+    margin-right: 0;
+  }
+
+  .img-wrapper {
+    width: 30%;
+    max-height: 85px;
+  }
+
+  .intro__pic {
+    top: 5px;
+    max-width: 90%;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  /* Portfolio */
+  .carousel {
+    left: 0;
+  }
+
+  .card_center {
+    width: 100%;
+  }
+
+  .card-item {
+    display: none;
+  }
+
+  /* Overview */
+  .overview__wrap {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .about__wrap {
+    width: 100%;
+  }
+
+  .skills-list {
+    max-width: 100%;
+    justify-content: space-around;
+  }
+  
+  /*Footer*/
+  .footer__wrap {
+    padding: 0 10px;
+    max-width: 420px;
+  }
+
+  /* Contacts */
+  .contacts__wrap {
+    max-width: 420px;
+    flex-direction: column;
+  }
+
+  .input__wrap {
+    width: 100%;
+  }
+
+  .contacts__label {
+    padding-bottom: 10px;
+  }
+
 }
