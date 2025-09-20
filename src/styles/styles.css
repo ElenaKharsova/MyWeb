@@ -660,6 +660,61 @@ dialog[open] {
   transform: translate(-50%, -50%); 
 }
 
+@media (max-width: 1024px){
+  .intro__wrap {
+    padding: 15px 5px;
+  }
+  
+  .overview__wrap {
+    padding: 0 10px;
+  }
+
+  .skills__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-list {
+    width: 100%;
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  .footer__wrap {
+    padding: 0 10px;
+  }
+
+  .contacts__label {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px){
+  .card-item {
+    display: none;
+  }
+
+  .footer__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Contacts */
+  .contacts__wrap {
+    flex-direction: column;
+  }
+
+  .input__wrap {
+    max-width: 400px;
+  }
+
+  .media-link {
+    text-align: center;
+  }
+
+}
+
+
 @media (max-width: 420px) {
   input, textarea {
     width: 100%;
@@ -678,7 +733,6 @@ dialog[open] {
   }
 
   .intro__wrap {
-    padding: 15px 5px;
     font-size: 20px;
     width: 100%;
   } 
@@ -711,14 +765,9 @@ dialog[open] {
     width: 100%;
   }
 
-  .card-item {
-    display: none;
-  }
-
   /* Overview */
   .overview__wrap {
     flex-direction: column;
-    padding: 0 10px;
   }
 
   .about__wrap {
@@ -727,31 +776,18 @@ dialog[open] {
 
   .skills-list {
     max-width: 100%;
-    justify-content: space-around;
   }
   
   /*Footer*/
   .footer__wrap {
-    padding: 0 10px;
     max-width: 420px;
-  }
-
-  /* Contacts */
-  .contacts__wrap {
-    max-width: 420px;
-    flex-direction: column;
   }
 
   .input__wrap {
     width: 100%;
   }
 
-  .contacts__label {
-    padding-bottom: 10px;
+  .contacts__wrap {
+    max-width: 420px;
   }
-
-  .media-link {
-    text-align: center;
-  }
-
 }
